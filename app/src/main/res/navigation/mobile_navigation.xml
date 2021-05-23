@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="ua.kpi.comsys.iv8221.ui.info.InfoFragment"
+        android:label="@string/title_info"
+        tools:layout="@layout/fragment_info" />
+
+    <fragment
+        android:id="@+id/navigation_charts"
+        android:name="ua.kpi.comsys.iv8221.ui.chart.ChartFragment"
+        android:label="@string/title_chart"
+        tools:layout="@layout/fragment_chart" />
+
+    <fragment
+        android:id="@+id/navigation_list"
+        android:name="ua.kpi.comsys.iv8221.ui.film.FilmFragment"
+        android:label="@string/list"
+        tools:layout="@layout/fragment_film_list" />
+
+    <fragment
+        android:id="@+id/navigation_picture"
+        android:name="ua.kpi.comsys.iv8221.ui.picture.PictureFragment"
+        android:label="Pictures"
+        tools:layout="@layout/fragment_picture_list" />
+</navigation>
